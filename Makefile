@@ -1,6 +1,6 @@
 cc = g++
 exec = eventslog_reader_json
-source = eventslog_reader_json.cpp
+source = src/eventslog_reader_json.cpp
 
 
 $(exec) : $(source)
