@@ -131,7 +131,7 @@ class MySQL_Event {
 		cout << "ProxySQL LOG QUERY:"<<endl << "{\"thread_id\":" << "\"" << thread_id << "\","  << "\"username\":" << "\""<< username <<"\","  << "\"schemaname\":" << "\""<<schemaname<<"\","<< "\"client\":" << "\""<< client<< "\"," ;
 			read_encoded_length((uint64_t *)&server_len,f);
 			server=read_string(f,server_len);
-			cout << "\"HID\":" <<"\"" << hid <<"\","  << "\"server:\":" << "\""<<server <<"\",";
+			cout << "\"HID\":" <<"\"" << hid <<"\","  << "\"server\":" << "\""<<server <<"\",";
         }
 		read_encoded_length((uint64_t *)&start_time,f);
 		read_encoded_length((uint64_t *)&end_time,f);
